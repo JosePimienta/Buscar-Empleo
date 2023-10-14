@@ -3,13 +3,18 @@
   margin: 0;
   padding: 0;
 }
+html, body{
+  margin: 0;
+  padding: 0;}
 
 body{
-  background: linear-gradient(#1c33a9, #3f87);
+  /* background: linear-gradient(#1c33a9, #3f87); */
+  /* background-color: red; */
   font-size: 16px;
-  font-family: 'Oswald', sans-serif;
-  margin-left: 10px;
-  margin-right: 10px;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Fira Sans Condensed', sans-serif;
+  /* margin-left: 10px;
+  margin-right: 10px; */
 }
 
 a{
@@ -22,8 +27,8 @@ ul{
 }
 
 .conteiner{
-  width: 100%;
-  margin: auto;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 
@@ -49,8 +54,11 @@ ul{
 .cabeza{
   display: flex;
   padding: 10px;
-  background: linear-gradient(#0e2fd9, #3f8);
-  border: 1px solid white;
+  width: 100%;
+  /* background: linear-gradient(#0e2fd9, #3f8); */
+  /* background-color: darkgray; */
+  /* border: 1px solid white; */
+  background-color: #737485ad;
 }
 
 .cabeza h1{
@@ -60,12 +68,16 @@ ul{
 
 /*navegacion izquierda*/
 .nav-main{
-  background: linear-gradient(#1c3, #3f87);
+  /* background: linear-gradient(#1c3, #3f87); */
+  background-color: rgba(213, 213, 213, 0.684);
+  position: relative;
 }
 
 .nav-main ul{
   display: flex;
   margin-left: 5px;
+  border: 1px solid black;
+  height: 50px;
 }
 
 .nav-main li{
@@ -92,25 +104,72 @@ ul{
 
 .b{
   margin-right: 30px;
+  /* border: 1px solid red; */
+}
+
+.buscar2{
+  background-color: #7374854e;
+  border-radius: 50px;
+  /* border: 1px solid red; */
+}
+
+.bu{
+   padding: 8px;
+   border-radius: 20px;
+   outline: 0;
+   border: none;
+   margin-right: 30px;
+   /* border: 1px solid red; */
+   background-color: #7374854e;
+   /* border: 1px solid red; */
 }
 
 .buscar{
   font-size: 15px;
   margin-right: 20px;
-  color: white;
+ 
 }
 
-.bb{
+/* .bb{
   cursor: pointer;
   font-size: 15px;
-  color: white;
-  background-color: #078716;/*/#544aee;*/
-}
+  color: rgb(0, 0, 0);
+  background-image: url(img/logo.jpg);
+  background-color: #078716;
+  border: 1px solid rgb(68, 0, 255);
+}  */
 
-.bb:hover{
+/* .bb:hover{
   opacity: .6;
+} */
+
+/*  */
+.custom-search-button {
+  position: relative;
 }
 
+.custom-search-button input[type="submit"] {
+  display: none;
+}
+
+.custom-search-button ion-icon {
+  position: absolute;
+  margin-left: -30px;
+  top: 55%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  padding: 5px;
+  /* background: #ba1616; */ /* Estilo de fondo para el botón */
+   /* border: none; */
+  border-radius: 20px; /* Añade bordes redondeados a la derecha */
+  color: white; /* Color del texto */
+}
+
+.custom-search-button:hover ion-icon {
+  background: #3333336e; /* Cambia el color del fondo al pasar el mouse sobre el botón */
+}
+
+/*  */
 #entradat{
   margin-left: -100px;
   margin-right: -150px;
@@ -157,19 +216,31 @@ ul{
   opacity: .7;
 }
 
-.bt{
+.registrate-boton{
+  margin: 0px;
+}
+
+.registrate-boton .bt{
+  /* padding: 9px;
+  background-color: red; */
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: 10px 10px;
-  background: rgba(109, 250, 84, 0.5);
+  padding: 10px;
+  background-color: #7374854e;
   border-radius: 30px;
   color: white;
   font-size: 15px;
   border: 1px solid white;
-  margin: 30px 10px;
+  /* margin: 30px 10px; */
   width: 100px;
   text-align: center;
+}
+
+.registrate-boton li{
+  padding: 0px;
+  border: 0px;
+  border: 1px solid red;
 }
 
 .registrate-boton-op{
@@ -995,7 +1066,7 @@ border-color: #C00000;
 }
 
 @media (max-width: 800px) {
-  body {background: yellow;}
+  body {background-color: aliceblue;}
 
   .registrate-boton-op{
     margin-left: 200px;
@@ -1036,6 +1107,77 @@ border-color: #C00000;
   .registrate-boton-op{
     margin-left: 100px;
   }
+
+  .conteiner .nav-main{
+    background-color: #e7e0e0;
+    padding: 0px;
+     display: flex;
+    height: 90px;
+    border: 1px solid white;
+    z-index: 0;
+  }
+
+  .nav-main ul{/* }.contacto-boton{ */
+    font-size: 10px;
+    display: flex; /* Utiliza flexbox para centrar verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos dentro de la lista */
+  list-style: none; /* Elimina los marcadores de la lista */
+  
+  padding: 0;
+    height: 30%;
+    /* width: 100%; */
+    max-width: 100px;
+    margin-top: -50px;
+    /* position: relative; */
+    /* background-color: orchid; */
+    /* margin-left: 10px; */
+  }
+
+  .nav-main ul li{
+    padding: 0px;  
+    width: 100px;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+  display: inline-flex; /* Permite alinear verticalmente los elementos internos */
+  align-items: center; /* Centra verticalmente los elementos internos */
+}
+
+
+
+.nav-main .bt{
+  height: 20px;
+  padding: 0px;
+  
+}
+
+
+.conteiner .buscar2{
+  width: 94%;
+  margin-top: -40px;
+  margin-left: 5px;
+  /* margin: 0; */
+  z-index: 1;
+ 
+}
+
+.conteiner .buscar2 .bu{
+  position: relative;
+  
+  width: 90%;
+}
+
+.buscar2 .custom-search-button{
+  
+  background-color: #08c7c9;
+  }
+
+
+
+ 
+
+  
+
+
+
 
   .nav-main ul.nav-menu{
     display: block;

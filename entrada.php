@@ -44,11 +44,11 @@ if (isset($_SESSION['nombre'])) {
 
                 <ul class="contacto-boton">
                   <li>
-                    <a href="#">
+                    <a href="#"> 
                       <i class="fas fa-address-book"> iniciar sesion</i>
 
-                    </a>
-                  </li>
+                     </a>
+                 </li>
                 </ul>
 
       <ul class="registrate-boton">
@@ -68,17 +68,22 @@ if (isset($_SESSION['nombre'])) {
 
      </form>-->
 
-      <form class="" action="entrada.php" method="post" class="buscar2">
+      <!-- <form  class="buscar2" action="entrada.php" method="post">
 
-        <input type="text" name="bu" value="">
+        <input class="bu" type="text" name="bu" value="">
         <input type="submit" name="" value="Buscar" class="bb">
-
-      </form>
-
+        <ion-icon name="search-outline"></ion-icon>
+      </form> -->
 
       </nav>
-
-      <hr>
+      <form class="buscar2" action="entrada.php" method="post">
+        <input class="bu" type="text" name="bu" value="">
+        <label class="custom-search-button bb">
+           <ion-icon name="search-outline"></ion-icon>
+           <input type="submit" name="" value="Buscar" style="display:none;">
+        </label>
+      </form>
+      <!-- <hr> -->
 
 
 
