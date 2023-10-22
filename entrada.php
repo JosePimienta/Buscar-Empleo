@@ -75,28 +75,36 @@ if (isset($_SESSION['nombre'])) {
         <ion-icon name="search-outline"></ion-icon>
       </form> -->
 
-      </nav>
       <form class="buscar2" action="entrada.php" method="post">
         <input class="bu" type="text" name="bu" value="">
         <label class="custom-search-button bb">
            <ion-icon name="search-outline"></ion-icon>
            <input type="submit" name="" value="Buscar" style="display:none;">
         </label>
-      </form>
+      </form> 
+
+      </nav>
+      <!-- <form class="buscar2" action="entrada.php" method="post">
+        <input class="bu" type="text" name="bu" value="">
+        <label class="custom-search-button bb">
+           <ion-icon name="search-outline"></ion-icon>
+           <input type="submit" name="" value="Buscar" style="display:none;">
+        </label>
+      </form> -->
       <!-- <hr> -->
 
 
-
-
-
-
-        <ul class="registrate-boton-op">
+      <ul class="registrate-boton-op">
           <li>
             <a href="#" class="bt-estud"><ion-icon name="school-outline"></ion-icon> Estudiante (Nuevo usuario)</a>
 
             <a href="#" class="bt-empre"><ion-icon name="business-outline"></ion-icon> Empresa (Añadir empleo)</a>
           </li>
         </ul>
+
+
+
+        
 
 
       <!--REGISTRO-->
@@ -140,7 +148,7 @@ if (isset($_SESSION['nombre'])) {
         <div id="error1"></div>
       </form>
 
-      <!--INICIAR SESION-->
+      <!-- INICIAR SESION
       <form class="formulario2" id="Form2" onsubmit="return iniciar()" method="post" action="loginProceso.php">
         <a href="#">
           <i class="fas fa-arrow-left" id="cerrar2"></i>
@@ -160,9 +168,9 @@ if (isset($_SESSION['nombre'])) {
         <a href="recuperar.php" id="recuperar">¿has olvidado tu contraseña?</a>
         <br>
         <div id="error2"></div>
-      </form>
+      </form> -->
 
-      <form class="formularioEmpresa" id="FormEmpresa" method="post" action="loginEmpresa.php">
+      <!-- <form class="formularioEmpresa" id="FormEmpresa" method="post" action="loginEmpresa.php">
         <a href="#">
           <i class="fas fa-arrow-left" id="cerrarE"></i>
         </a>
@@ -170,7 +178,7 @@ if (isset($_SESSION['nombre'])) {
         <input type="email" class="formulario-entrada" id="entradacontacto" name="Econtacto" required>
         <label for="" class="formulario-label"><ion-icon name="person-outline"></ion-icon>Correo</label>
         <button type="submit" class="enviarE" value="">Ingresar</button>
-      </form>
+      </form> -->
 
 
       <!--AÑADIR EMPRESA-->
@@ -216,6 +224,7 @@ include("registrar.php");
 
       <!--imagen principal-->
       <header class="shoucase" id="shoucase-entrada">
+      
         <h2>BUSCAR EMPLEO.</h2>
         <p>Buscar empleo es una herramienta creada por estudiantes de la univercidad de cartagena con el fin de ayudar a estudiantes de diferentes universidades a conseguir un empleo de acuerdo a sus necesidades para que así no se vean en la necesidad de abandonar sus estudios.</p>
       </header>

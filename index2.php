@@ -27,6 +27,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&family=Oswald&family=Poppins:ital,wght@1,400;1,500&family=Signika+Negative:wght@400;600&display=swap" rel="stylesheet">
+
     <!--ESTILOS DE CSS-->
     <link rel="stylesheet" href="style.css">
 

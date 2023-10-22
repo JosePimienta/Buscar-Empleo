@@ -5,20 +5,33 @@
 }
 html, body{
   margin: 0;
-  padding: 0;}
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Signika Negative', sans-serif;
+  background: #73748532;
+}
 
 body{
   /* background: linear-gradient(#1c33a9, #3f87); */
   /* background-color: red; */
   font-size: 16px;
   /* font-family: 'Oswald', sans-serif; */
-  font-family: 'Fira Sans Condensed', sans-serif;
+  /* font-family: 'Fira Sans Condensed', sans-serif; */
   /* margin-left: 10px;
   margin-right: 10px; */
+  font-family: 'Merriweather', serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Signika Negative', sans-serif;
+
+
 }
 
 a{
-  color: white;
+  /* color: white; */
+  color: black;
   text-decoration: none;
 }
 
@@ -27,7 +40,7 @@ ul{
 }
 
 .conteiner{
-  max-width: 1500px;
+  /* max-width: 1500px; */
   margin: 0 auto;
 }
 
@@ -38,8 +51,8 @@ ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
-  padding: 30px 0;
+  /* height: 60px; */
+  padding: 0;
 }
 
 .nav-menu{
@@ -70,14 +83,14 @@ ul{
 .nav-main{
   /* background: linear-gradient(#1c3, #3f87); */
   background-color: rgba(213, 213, 213, 0.684);
-  position: relative;
+ display: flex;
 }
 
 .nav-main ul{
   display: flex;
   margin-left: 5px;
-  border: 1px solid black;
-  height: 50px;
+  /* border: 1px solid black; */
+  /* height: 50px; */
 }
 
 .nav-main li{
@@ -89,8 +102,8 @@ ul{
 }
 
 .nav-main ul li a:hover{
-  border-bottom: 2px solid white;
-  opacity: 0.7;
+  /* border-bottom: 2px solid white; */
+  opacity: 0.9;
   animation-duration: 3s;
 }
 
@@ -229,9 +242,9 @@ ul{
   padding: 10px;
   background-color: #7374854e;
   border-radius: 30px;
-  color: white;
+  color: black;
   font-size: 15px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   /* margin: 30px 10px; */
   width: 100px;
   text-align: center;
@@ -240,30 +253,62 @@ ul{
 .registrate-boton li{
   padding: 0px;
   border: 0px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
-.registrate-boton-op{
-  margin-left: 500px;
+/* ------------------------------------------------ */
+
+.registrate-boton-op {
+  margin-top: 10px;
+  /* position: absolute; */
+  text-align: center; /* Centra horizontalmente el contenido */
+}
+
+.registrate-boton-op li {
+  display: inline; /* Hace que los elementos <li> se muestren en línea */
+  /* margin-bottom: 500px; Añade un margen horizontal entre los elementos si lo deseas */
+  /* position: absolute; */
+  
+  z-index: 100;
+}
+
+
+/* ------------------------------------------------ */
+
+/* .registrate-boton-op{
+  height: 100px;  
+  margin-top: 5px;
   z-index: 100;
   position: absolute;
-}
+  display: block;
+  border: #ff0000 1px solid;
+  margin-top: 10px;
+} */
+
+/* .conteiner .registrate-boton-op{
+  max-width: 500px;
+  width: 90%;
+  margin-left: 34%;
+  margin-right: 40%;
+} */
+
+/* ------------------------------------------------ */
 
 .bt-estud{
   cursor: pointer;
-  display: inline-block;
+  /* display: inline-block; */
   border: 0;
-  margin-left: 715px;
   padding: 8px 10px;
-  background: rgba(109, 250, 84, 0.5);
+  background: #7374854e;
   border-radius: 30px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 15px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  /* height: 70px;
   margin: 10px;
-  margin-top: 0;
-  width: 120px;
-  text-align: center;
+  margin-top: 0px;
+  width: 130px; */
+  /* text-align: center; */
 }
 
 .bt-estud:hover{
@@ -272,18 +317,19 @@ ul{
 
 .bt-empre{
   cursor: pointer;
-  display: inline-block;
+  /* display: inline-block; */
   border: 0;
   padding: 8px 10px;
-  background: rgba(109, 250, 84, 0.5);
+  background: #7374854e;
   border-radius: 30px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 15px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  /* height: 70px;
   margin: 10px;
-  margin-top: 0;
-  width: 130px;
-  text-align: center;
+  margin-top: 0px;
+  width: 130px; */
+  /* text-align: center; */
 }
 
 .bt-empre:hover{
@@ -303,7 +349,7 @@ hr{
 }
 
 .formulario-entrada:focus{
-border-color: #C00000;
+border-color: rgb(64, 0, 255);
 }
 
 .formulario{
@@ -317,16 +363,63 @@ border-color: #C00000;
   z-index: 100;
 }
 
-.formulario2, .formularioEmpresa{
-  background: rgba(11, 11, 182, 0.98);
-  width: 613px;
-  max-width: 100%;
-  margin-left: 715px;
-  padding: 20px;
-  position: absolute;
-  transition-delay: 2s;
-  z-index: 100;
+.formulariosDeEntrada{
+  /* float: right; */
+  display: flex;
+  /* border: #020202 1px solid; */
+  /* text-align: center; */
+  margin: 0 auto;
 }
+
+.formularioEmpresa, .formulario2{
+  margin-top: 100px;
+  /* border: #08c7c9 solid 1px; */
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+ border-radius: 20px;
+ /* background-color: #171717; */
+ background: rgba(0, 0, 0, 0.464);
+}
+
+.formularioEmpresa a i{
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.formulario2 a i{
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.formulario2 a{
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  
+}
+
+.formulario2 a i{
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+/* .formularioEmpresa{ */
+  /* background: rgba(11, 11, 182, 0.98); */
+  /* width: 613px; */
+  /* max-width: 100%; */
+  /* margin-left: 715px; */
+  /* padding: 20px; */
+  /* position: absolute; */
+  /* transition-delay: 2s; */
+  /* z-index: 100; */
+  /* width: 50%; */
+/* } */
+
+/* .formulario2{ */
+  /* width: 50%; */
+  /* position: absolute; */
+/* } */
 
 .formulario3{
   background: rgba(11, 11, 182, 0.98);
@@ -342,7 +435,7 @@ border-color: #C00000;
 
 .formulario-titulo{
   text-align: center;
-  margin-top: -40px;
+  /* margin-top: -40px; */
   margin-bottom: 50px;
   color: rgba(0,0,0,0.9);
 }
@@ -354,11 +447,11 @@ border-color: #C00000;
   margin-bottom: 50px;
   color: rgba(0,0,0,0.9);
 }
-#recu{
-
+/* #recu{
+  display: block;
   margin-top: 100px;
 
-}
+} */
 #bt-recu{
   display: block;
   width: 20%;
@@ -378,30 +471,63 @@ border-color: #C00000;
 }
 /*HASTA AQUI*/
 
-.formulario-entrada, .formulario-label, .enviar, .enviar2, .anTra, .enviarE{
+.formulario-label, .enviar, .anTra{
   display: block;
   width: 90%;
   font-size: 1.3em;
+  /* margin: 0 auto; */
+  text-align: left;
+}
+
+.enviar2, .enviarE{
+  display: block;
+  width: 70%;
+  border-radius: 20px;
+  font-size: 1.3em;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  background-color: #f2f2f2;
+}
+
+.enviar2:hover, .enviarE:hover{
+  background-color: rgba(0, 21, 255, 0.104);
 }
 
 .formulario-entrada{
+  border: 0;
+  /* margin-left: 10px; */
+  border-radius: 20px;
+  display: block;
+  width: 70%;
+  font-size: 1.3em;
+  margin: 0 auto;
+  text-align: left;
+  margin: 0 auto;
   padding: 15px;
   background: transparent;
-  border: 1px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgb(88, 86, 86);
+  /* border: 1px solid rgba(0,0,0,0.3); */
   margin-bottom: 55px;
-  border-color: white;
-  background: rgba(0, 0, 0, 0.3);
+  /* border-color: white; */
+  /* background: rgba(0, 0, 0, 0.3); */
   color: white;
 }
 
 .formulario-entrada:focus + .formulario-label{
   margin-top: -149px;
+  color: rgb(64, 0, 255);
+  z-index: 1;
 }
 
-.formulario-entrada:valid{
- border-width: 3px;
- border-color: #1c33a9 #3f87;
+.formulario-entrada:focus{
+  outline: none;
 }
+
+/* .formulario-entrada:valid{
+ border-width: 3px;
+ border-color: #1c33a9;
+} */
 
 #errorn, #errora, #errort, #errord, #errore, #errorc, #errorcp, #erroru, #erroru2, #errorcorreo, #errorcontrasena{
   position: absolute;
@@ -438,9 +564,10 @@ border-color: #C00000;
   padding-left: 15px;
   position: absolute;
   margin-top: -100px;
-  z-index: -20;
+  z-index: -1;
   transition: all 0.2s;
   color: white;
+  margin-left: 100px;
 
 }
 
@@ -450,7 +577,7 @@ border-color: #C00000;
 
 .enviar, .enviar2, .anTra, .enviarE{
   cursor: pointer;
-  background: transparent;
+  background: #f2f2f29a;
   border-color: gray;
 }
 
@@ -494,29 +621,30 @@ border-color: #C00000;
 
 }
 
-.formulario2{
+/* .formulario2{
   animation-name: fm2;
   animation-duration: 1s;
-  display: none;
-}
+  /* display: none; */
+  /* display: block;
+} */ */
 
-.formulario2.show{
+/* .formulario2.show{
   animation-name: fm2;
   animation-duration: 1s;
   display: block;
-}
+} */
 
-@keyframes fm2{
+/* @keyframes fm2{
   0%{
     width: 10px;
   }
   100%{
-     width: 613px;
+     width: 50px;
   }
 
-}
+} */
 
-.formularioEmpresa{
+/* .formularioEmpresa{
   animation-name: fmE;
   animation-duration: 1s;
   display: none;
@@ -533,10 +661,10 @@ border-color: #C00000;
     width: 10px;
   }
   100%{
-     width: 613px;
+     width: 100%;
   }
 
-}
+} */
 
 
 
@@ -579,12 +707,14 @@ border-color: #C00000;
 #recu{
   padding: 15px;
   width: 500px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  display: block;
+  margin: 30px auto;
+  /* top: 40%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
   text-align: center;
-  background: orange;
+  background: rgba(0, 0, 0, 0.464);
   border-radius: 10px;
 }
 
@@ -599,7 +729,8 @@ border-color: #C00000;
 
 #brest{
   padding: 10px;
-  background: rgba(0, 0, 0, 0.3);;
+  border-radius: 15px;
+  background-color: #f2f2f272;
   margin-bottom: 10px;
   cursor: pointer;
 }
@@ -607,9 +738,10 @@ border-color: #C00000;
 .entradacorreo2{
   padding: 15px;
   background: transparent;
-  border: 1px solid rgba(0,0,0,0.3);
+  /* border: 1px solid rgba(0,0,0,0.3); */
+  border: 0;
   margin-bottom: 55px;
-  border-color: white;
+  /* border-color: white; */
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.3);
   color: white;
@@ -617,7 +749,15 @@ border-color: #C00000;
   margin-top: 10px;
   margin-bottom: 15px;
   font-size: 20px;
+  /* outline: none; */
 }
+
+.entradacorreo2:focus{
+  outline: none;
+}
+
+
+
 
 
 
@@ -637,9 +777,10 @@ border-color: #C00000;
   color: #020202;
 }
 
-#shoucase-entrada{
-  background: rgba(79, 115, 249, 0.1);
-}
+/* #shoucase-entrada{ */
+  /* background: #73748532; */
+  /* z-index: 100; */
+/* } */
 
 #shoucase-index{
   background: rgba(79, 202, 249, 0.6);
@@ -947,9 +1088,9 @@ border-color: #C00000;
 @media (max-width: 1180px) {
         body {background: orange;}
 
-        .registrate-boton-op{
+        /* .registrate-boton-op{
           margin-left: 380px;
-        }
+        } */
 
           .formulario{
             width: 800px;
@@ -965,8 +1106,8 @@ border-color: #C00000;
             }
           }
 
-          .formulario2{
-            width: 500px;
+          /* .formulario2{
+            width: 100%;
             margin-left: 0;
           }
 
@@ -975,9 +1116,9 @@ border-color: #C00000;
               width: 10px;
             }
             100%{
-               width: 500px;
+               width: 100%;
             }
-          }
+          } */
 
           .formulario3{
             width: 1000px;
@@ -1001,12 +1142,12 @@ border-color: #C00000;
         margin-top: -80px;
       }
 
-      .registrate-boton-op{
+      /* .registrate-boton-op{
         margin-left: 400px;
-      }
+      } */
 
       .nav-main{
-        height: 110px;
+        height: 50px;
       }
 
       .conRe{
@@ -1042,9 +1183,9 @@ border-color: #C00000;
 @media (max-width: 900px) {
   body {background: orange;}
 
-  .registrate-boton-op{
+  /* .registrate-boton-op{
     margin-left: 250px;
-  }
+  } */
 
   .nav-menu{
     padding: 1px;
@@ -1052,7 +1193,7 @@ border-color: #C00000;
   }
 
   .nav-main{
-    height: 145px;
+    height: 50px;
   }
 
   .nav-main ul.nav-menu{
@@ -1068,17 +1209,22 @@ border-color: #C00000;
 @media (max-width: 800px) {
   body {background-color: aliceblue;}
 
-  .registrate-boton-op{
+  /* .registrate-boton-op{
     margin-left: 200px;
-  }
+  } */
 
   .nav-menu{
     padding: 1px;
     margin-left: 0;
+    display: flex;
   }
 
   .nav-main ul.nav-menu{
-    display: block;
+    display: flex;
+  }
+
+  .conteiner .nav-main{
+    display: flex;
   }
 
   .nav-main ul.nav-menu li{
@@ -1105,20 +1251,24 @@ border-color: #C00000;
   }
 
   .registrate-boton-op{
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    float: left;
   }
 
   .conteiner .nav-main{
+    margin: 0 auto;
     background-color: #e7e0e0;
     padding: 0px;
      display: flex;
-    height: 90px;
+    height: 50px;
     border: 1px solid white;
     z-index: 0;
+    
   }
 
   .nav-main ul{/* }.contacto-boton{ */
-    font-size: 10px;
+    /* font-size: 10px; */
+    /* width: 80%; */
     display: flex; /* Utiliza flexbox para centrar verticalmente los elementos */
   justify-content: center; /* Centra horizontalmente los elementos dentro de la lista */
   list-style: none; /* Elimina los marcadores de la lista */
@@ -1126,8 +1276,8 @@ border-color: #C00000;
   padding: 0;
     height: 30%;
     /* width: 100%; */
-    max-width: 100px;
-    margin-top: -50px;
+    max-width: 25%;
+    /* margin-top: -50px; */
     /* position: relative; */
     /* background-color: orchid; */
     /* margin-left: 10px; */
@@ -1135,13 +1285,16 @@ border-color: #C00000;
 
   .nav-main ul li{
     padding: 0px;  
-    width: 100px;
+    width: 150px;
     text-decoration: none; /* Elimina el subrayado del enlace */
   display: inline-flex; /* Permite alinear verticalmente los elementos internos */
   align-items: center; /* Centra verticalmente los elementos internos */
 }
 
-
+.contacto-boton{
+  font-size: 20px;
+  
+}
 
 .nav-main .bt{
   height: 20px;
@@ -1151,8 +1304,8 @@ border-color: #C00000;
 
 
 .conteiner .buscar2{
-  width: 94%;
-  margin-top: -40px;
+  width: 50%;
+  /* margin-top: -40px; */
   margin-left: 5px;
   /* margin: 0; */
   z-index: 1;
@@ -1162,7 +1315,7 @@ border-color: #C00000;
 .conteiner .buscar2 .bu{
   position: relative;
   
-  width: 90%;
+  width: 85%;
 }
 
 .buscar2 .custom-search-button{
@@ -1187,6 +1340,28 @@ border-color: #C00000;
     margin-top: -10px;
     padding: 12px;
   }
+
+
+  .formulariosDeEntrada{
+    /* float: right; */
+    display: block;
+    /* border: #020202 1px solid; */
+    /* text-align: center; */
+    margin: 0 auto;
+  }
+  
+  .formularioEmpresa, .formulario2{
+    margin-top: 100px;
+    /* border: #08c7c9 solid 1px; */
+    width: 80%;
+    margin-left: 30px;
+    margin-right: 10px;
+   border-radius: 20px;
+   /* background-color: #171717; */
+   background: rgba(0, 0, 0, 0.464);
+   
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -1209,9 +1384,21 @@ border-color: #C00000;
 @media (max-width: 500px) {
   body {background: blue;}
 
-  .buscar2{
-    margin-top: 100px;
-    margin-left: -190px;
+ .conteiner .nav-main{
+    /* display: flex; */
+    
+    height: 50px;
+  } 
+  
+  /* .nav-main ul{
+    margin-top: -40px;
+    width: 100%;
+  } */
+
+  .conteiner .buscar2 .bu{
+    position: relative;
+    
+    width: 80%;
   }
 
   .usuycon2{
@@ -1219,8 +1406,13 @@ border-color: #C00000;
     margin-top: -140px;
   }
 
-  .registrate-boton-op{
-    margin-left: 200px;
+  .registrate-boton-op .bt-empre{
+    /* margin-left: 200px; */
+    font-size: 12px;
+  }
+  .registrate-boton-op .bt-estud{
+    /* margin-left: 200px; */
+    font-size: 12px;
   }
 
   .shoucase{
@@ -1241,12 +1433,18 @@ border-color: #C00000;
 @media (max-width: 400px) {
   body {background: purple;}
 
-  .registrate-boton{
+  /* .registrate-boton{
     margin-right: 40px;
-  }
+  } */
 
-  .contacto-boton{
+  /* .contacto-boton{
     margin-top: 30px;
+  } */
+
+  .conteiner .buscar2 .bu{
+    position: relative;
+    
+    width: 70%;
   }
 
   .b{
@@ -1280,10 +1478,21 @@ border-color: #C00000;
   .conRe2 form.b{
     margin-top: 30px;
   }
+
+  .formulario-label{
+ 
+    margin-left: 50px;
+  
+  }
 }
 
 @media (max-width: 380px) {
   body {background: red;}
+
+  .registrate-boton .bt{
+    margin-left: 10px;
+    background-color: red;
+  }
 
   .conRe2{
     margin-right: 110px;
@@ -1326,16 +1535,23 @@ border-color: #C00000;
     margin-top: -10px;
   }
 
-  .registrate-boton-op{
-    margin-left: 100px;
+  .registrate-boton-op .bt-empre{
+    /* margin-left: 100px; */
+    float: left;
+  }
+
+  .registrate-boton-op .bt-estud{
+    /* margin-left: 100px; */
+    float: left;
   }
 
   .nav-main{
-    width: 330px;
+    width: 100%;
+    display: block;
   }
 
   .cabeza{
-    width: 330px;
+    width: 100%;
   }
 
   .shoucase{
